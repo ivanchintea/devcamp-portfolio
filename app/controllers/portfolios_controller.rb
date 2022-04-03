@@ -49,6 +49,10 @@ class PortfoliosController < ApplicationController
     	end
     end
 
+    def angular
+    	@angular_portfolio_items = Portfolio.angular
+    end
+
 
 	def portfolio_params
 		params.require(:portfolio).permit(:title, :subtitle, :body)
