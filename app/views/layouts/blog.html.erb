@@ -19,9 +19,6 @@
     <%= yield %>
 
     <%= render "shared/nav", location: 'bottom' %>
-
-    <% if session[:source] %>
-      <%= session[:source] %>
-    <% end %>
+    <%= source_helper %>
   </body>
 </html>
